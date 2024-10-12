@@ -15,6 +15,7 @@
     # tools
     "com.mattjakeman.ExtensionManager"
     "io.missioncenter.MissionCenter"
+    "org.localsend.localsend_app"
     # video/audio players
     "io.github.dweymouth.supersonic"
     "org.videolan.VLC"
@@ -25,9 +26,6 @@
     "com.nextcloud.desktopclient.nextcloud"
     "md.obsidian.Obsidian"
     "org.gnome.World.Iotas"
-    # Password manager
-    # ugly in flatpak
-    #"org.keepassxc.KeePassXC"
     # books
     "com.calibre_ebook.calibre"
     # video/audio editing
