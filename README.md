@@ -3,6 +3,7 @@ Basic system with flatpak, packages removed from GNOME.
 
 Private repo.
 
+```
 $ fastfetch
           ▗▄▄▄       ▗▄▄▄▄    ▄▄▄▖             user@nixos
           ▜███▙       ▜███▙  ▟███▛             -----------
@@ -33,3 +34,5 @@ $ fastfetch
 
                                                ████████████████████████
                                                ████████████████████████
+
+```
