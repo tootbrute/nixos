@@ -14,7 +14,7 @@
     #{ appId = "com.brave.Browser"; origin = "flathub"; }
     # tools
     "com.mattjakeman.ExtensionManager"
-    "io.missioncenter.MissionCenter"
+    #"io.missioncenter.MissionCenter" bug-doesn't work
     "org.localsend.localsend_app"
     # video/audio players
     "io.github.dweymouth.supersonic"
