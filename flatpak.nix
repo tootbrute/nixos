@@ -23,7 +23,7 @@
     "org.torproject.torbrowser-launcher"
     "com.brave.Browser"
     # Nextcloud apps
-    "com.nextcloud.desktopclient.nextcloud"
+    #"com.nextcloud.desktopclient.nextcloud"
     "md.obsidian.Obsidian"
     "org.gnome.World.Iotas"
     # books

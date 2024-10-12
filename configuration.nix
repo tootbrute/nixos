@@ -127,6 +127,8 @@
     curl
     keepassxc
     git
+    htop
+    nextcloud-desktop
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
