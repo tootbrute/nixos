@@ -52,7 +52,7 @@
     gnomeExtensions.caffeine
     gnomeExtensions.gsconnect
     gnomeExtensions.hot-edge
+    gnomeExtensions.alphabetical-app-grid
   ];
-
 
 }
