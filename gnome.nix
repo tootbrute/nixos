@@ -37,6 +37,7 @@
     gnome-logs
     gnome-system-monitor
     gnome-calculator
+    pkgs.gnome-tour
     #gnome-calendar
     #gnome-characters
     #gnome-clocks

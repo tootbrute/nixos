@@ -64,6 +64,9 @@
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
+  # remove xterm
+  services.xserver.excludePackages = [ pkgs.xterm ];
+  services.xserver.desktopManager.xterm.enable = false;  
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -128,7 +131,7 @@
     keepassxc
     git
     htop
-    nextcloud-desktop
+    nextcloud-client
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
