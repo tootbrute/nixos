@@ -27,8 +27,13 @@
   boot.tmp.cleanOnBoot = true;
 
   # Housekeeping: Garbage collection
-  nix.gc.automatic = true;
   nix.optimise.automatic = true;
+
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 14d";
+  };
 
   # Disable sudo password for the wheel group
   security.sudo.wheelNeedsPassword = false;
