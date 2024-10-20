@@ -2,15 +2,6 @@
 
 {
 
-  # hide desktop icons for things i don't want
-  xdg.desktopEntries.btop = {
-    type = "Application";
-    name = "Btop";
-    exec = "btop";
-    terminal = true;
-    noDisplay = true;
-  };
-
   # Auto unlock gnome keyring
   services.gnome.gnome-keyring.enable = true;
   security.pam.services.sddm.enableGnomeKeyring = true;
