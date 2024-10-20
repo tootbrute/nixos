@@ -31,7 +31,7 @@
     gnome-music
     gnome-software
     pkgs.gnome-extension-manager
-    #gnome-shell-extensions
+    gnome-shell-extensions
     pkgs.gnome-photos
     pkgs.gnome-connections
     pkgs.snapshot
