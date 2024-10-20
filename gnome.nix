@@ -30,7 +30,7 @@
     gnome-maps
     gnome-music
     gnome-software
-    gnome-extension-manager
+    pkgs.gnome-extension-manager
     #gnome-shell-extensions
     pkgs.gnome-photos
     pkgs.gnome-connections

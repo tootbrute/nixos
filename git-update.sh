@@ -1,8 +1,5 @@
-echo "give commit message:"
-read $commit
 git add .
-
-git commit -m $commit
+git commit -m "update"
 git push origin main
 
 #git status
