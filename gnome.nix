@@ -2,11 +2,6 @@
 
 {
 
-  # not sure this is necessary?
-  # Auto unlock gnome keyring
-  #services.gnome.gnome-keyring.enable = true;
-  #security.pam.services.sddm.enableGnomeKeyring = true;
-
   # Auto unlock gnome keyring
   services.gnome.gnome-keyring.enable = true;
   security.pam.services.sddm.enableGnomeKeyring = true;
