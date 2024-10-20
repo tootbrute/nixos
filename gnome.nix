@@ -9,7 +9,7 @@
     exec = "btop";
     terminal = true;
     noDisplay = true;
-
+  };
 
   # Auto unlock gnome keyring
   services.gnome.gnome-keyring.enable = true;
