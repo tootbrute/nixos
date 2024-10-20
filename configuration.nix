@@ -135,7 +135,6 @@
     curl
     keepassxc
     git
-    htop
     nextcloud-client
     libreoffice-fresh
     hunspell #dictionary for libreoffice
