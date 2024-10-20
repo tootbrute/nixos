@@ -140,6 +140,7 @@
     hunspell #dictionary for libreoffice
     hunspellDicts.en_CA
     hunspellDicts.en_US
+    htop
   ];
 
   # Fonts
