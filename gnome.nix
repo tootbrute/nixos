@@ -2,6 +2,11 @@
 
 {
 
+  # hide desktop icons for things i don't want
+  xdg.desktopEntries.htop.noDisplay
+  xdg.desktopEntries.htop.name
+xdg.desktopEntries.htop.exec
+
   # Auto unlock gnome keyring
   services.gnome.gnome-keyring.enable = true;
   security.pam.services.sddm.enableGnomeKeyring = true;
