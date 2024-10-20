@@ -143,16 +143,6 @@
     btop
   ];
 
-  # hide desktop icons for things i don't want
-  xdg.desktopEntries.btop = {
-    type = "Application";
-    name = "Btop";
-    exec = "btop";
-    terminal = true;
-    noDisplay = true;
-  };
-
-
   # Fonts
   fonts.packages = with pkgs; [  
     corefonts  
