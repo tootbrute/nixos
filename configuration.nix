@@ -190,6 +190,10 @@
   # Tailscale
   services.tailscale.enable = true;
 
+  # Virtualization for VMs
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
+
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
