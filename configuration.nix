@@ -105,7 +105,7 @@
   users.users.elias = {
     isNormalUser = true;
     description = "Elias Gasparis";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
     packages = with pkgs; [
     #  thunderbird
     ];
