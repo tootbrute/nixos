@@ -1,25 +1,15 @@
 {
-    description = "My Home Manager Flake";
+  description = "A very basic flake";
 
-    inputs = {
-        nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
-        home-manager = {
-            url = "github:nix-community/home-manager";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-    };
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+  };
 
-    outputs = {nixpkgs, home-manager, ...}: {
-        # For `nix run .` later
-        defaultPackage.x86_64-linux = home-manager.defaultPackage.x86_64-linux;
+  outputs = { self, nixpkgs }: {
 
-        homeConfigurations = {
-            "elias" = home-manager.lib.homeManagerConfiguration {
-                # Note: I am sure this could be done better with flake-utils or something
-                pkgs = import nixpkgs { system = "x86_64-linux"; };
+    packages.x86_64-linux.hello = nixpkgs.legacyPackages.x86_64-linux.hello;
 
-                modules = [ ./home.nix ]; # Defined later
-            };
-        };
-    };
+    packages.x86_64-linux.default = self.packages.x86_64-linux.hello;
+
+  };
 }
