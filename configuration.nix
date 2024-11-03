@@ -11,8 +11,6 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./gnome.nix
-      #testing
-      <home-manager/nixos>
     ];
 
   # Bootloader.
