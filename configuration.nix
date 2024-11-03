@@ -10,8 +10,9 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./flatpak.nix
       ./gnome.nix
+      #testing
+      <home-manager/nixos>
     ];
 
   # Bootloader.
@@ -182,10 +183,13 @@
   };
   environment.sessionVariables = { LIBVA_DRIVER_NAME = "iHD"; }; # Force intel-media-driver
 
-  # List services that you want to enable:
-
-  # Enable the OpenSSH daemon.
+  # Services:
+  # =====================================
+  # OpenSSH daemon
   services.openssh.enable = true;
+
+  # Flatpak
+  services.flatpak.enable = true;
 
   # Tailscale
   services.tailscale.enable = true;
