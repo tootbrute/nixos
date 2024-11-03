@@ -1,15 +1,25 @@
-{ config, pkgs, ... }:
-let
-  home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/master.tar.gz";
-in
 {
-  imports = [
-    (import "${home-manager}/nixos")
-  ];
+    description = "My Home Manager Flake";
 
-  home-manager.users.elias = {
-    /* The home.stateVersion option does not have a default and must be set */
-    home.stateVersion = "24.05";
-    /* Here goes the rest of your home-manager config, e.g. home.packages = [ pkgs.foo ]; */
-  };
+    inputs = {
+        nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+        home-manager = {
+            url = "github:nix-community/home-manager";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
+    };
+
+    outputs = {nixpkgs, home-manager, ...}: {
+        # For `nix run .` later
+        defaultPackage.x86_64-linux = home-manager.defaultPackage.x86_64-linux;
+
+        homeConfigurations = {
+            "your.username" = home-manager.lib.homeManagerConfiguration {
+                # Note: I am sure this could be done better with flake-utils or something
+                pkgs = import nixpkgs { system = "x86_64-linux"; };
+
+                modules = [ ./home.nix ]; # Defined later
+            };
+        };
+    };
 }
