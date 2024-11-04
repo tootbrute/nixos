@@ -7,7 +7,7 @@
   security.pam.services.sddm.enableGnomeKeyring = true;
 
   # Remove default packages from GNOME
-  environment.gnome.excludePackages = with pkgs.gnome; [
+  environment.gnome.excludePackages = with  pkgs; [
     baobab      # disk usage analyzer
     cheese      # photo booth
     eog         # image viewer
@@ -25,25 +25,20 @@
     gnome-maps
     gnome-music
     gnome-software
-    pkgs.gnome-extension-manager
+    gnome-extension-manager
     gnome-shell-extensions
-    pkgs.gnome-photos
-    pkgs.gnome-connections
-    pkgs.snapshot
+    gnome-photos
+    gnome-connections
+    snapshot
     gnome-logs
     gnome-system-monitor
     gnome-calculator
-    pkgs.gnome-tour
-    #gnome-calendar
-    #gnome-characters
-    #gnome-clocks
-    #gnome-font-viewer gnome-screenshot
-    #gnome-disk-utilitys
+    gnome-tour
   ];
 
   environment.systemPackages = with pkgs; [
     #Gnome tweak tools
-    gnome.gnome-tweaks
+    gnome-tweaks
     gnomeExtensions.appindicator
     gnomeExtensions.caffeine
     gnomeExtensions.gsconnect
