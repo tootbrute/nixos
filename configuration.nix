@@ -19,7 +19,7 @@
   boot.loader.grub.configurationLimit = 10;
 
   boot.initrd.luks.devices."luks-880424d4-ac69-44cf-aa3b-99a224128551".device = "/dev/disk/by-uuid/880424d4-ac69-44cf-aa3b-99a224128551";
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "greynix"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Clear /tmp during boot
@@ -140,6 +140,7 @@
     hunspellDicts.en_CA
     hunspellDicts.en_US
     btop
+    restic
   ];
 
   # Fonts
